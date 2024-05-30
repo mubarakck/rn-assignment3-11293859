@@ -3,10 +3,13 @@ import { StyleSheet,ScrollView, TextInput, Image,  Text, View } from 'react-nati
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your Apps!</Text>
+    <ScrollView style={styles.container}>
+      <View style={styles.header}>
+      <Text style={styles.greeting}>Hello, Devs</Text>
+      <Text style={styles.taskCount}>14 tasks today</Text>
       <StatusBar style="auto" />
     </View>
+    </ScrollView>
   );
 }
 
