@@ -28,10 +28,13 @@ export default function App() {
 
       <Text style={styles.sectionTitle}>Categories</Text>
 
-
+    
 
       <View style={styles.categories}>
 
+
+      <View>
+       <ScrollView horizontal={true} style={styles.categories} showsHorizontalScrollIndicator={false}>
 
       <View style={styles.category}>         
           <Text style={styles.categoryText}>Exercise</Text>
@@ -94,6 +97,11 @@ export default function App() {
           <Image source={ require("./assets/bath.png")} style={styles.categoryImage} />
         </View>
 
+
+        </ScrollView>
+
+        </View>
+        
         
 
         </View>
@@ -262,14 +270,18 @@ const styles = StyleSheet.create({
   },
   categories: {
     flexDirection: 'row',
+    height:192,
+    
+    
   },
   category: {
     backgroundColor: '#fff',
     borderRadius: 10,
     padding: 10,
     alignItems: 'center',
-    width: '48%',
+    width:396,
     marginRight: 30,
+    marginLeft: 20,
   },
   categoryImage: {
     width: 100,
