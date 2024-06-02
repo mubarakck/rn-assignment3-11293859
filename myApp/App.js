@@ -98,7 +98,7 @@ export default function App() {
 
         </View>
 
-
+        <Text style={styles.sectionTitle}>Ongoing Task</Text>
 
 
 
