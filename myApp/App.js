@@ -101,6 +101,12 @@ export default function App() {
         <Text style={styles.sectionTitle}>Ongoing Task</Text>
 
 
+        <View style={styles.ogtask}>
+        <Text >Mobile App Development</Text>
+        </View>
+
+        
+
 
 
 
@@ -207,6 +213,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'bold',
     marginTop: 10,
+  },
+  ogtask: {
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 20,
+    marginVertical: 8,
   },
   
 });
