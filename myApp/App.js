@@ -1,4 +1,26 @@
-import { StyleSheet,ScrollView, Button, TextInput, Image,  Text, View } from 'react-native';
+import { StyleSheet, ScrollView, TextInput, TouchableHighlight, Image, Button, Text, View, FlatList } from 'react-native';
+
+const ongoingTasks = [
+  { id: '1', title: 'Mobile App Development' },
+  { id: '2', title: 'Web Development' },
+  { id: '3', title: 'Push Ups' },
+  { id: '4', title: 'Programming' },
+  { id: '5', title: 'Language Learning' },
+  { id: '6', title: 'Mental Health' },
+  { id: '7', title: 'Assignments' },
+  { id: '8', title: 'Announcements' },
+  { id: '9', title: 'Calculus' },
+  { id: '10', title: 'Software Engineering' },
+  { id: '11', title: 'Python Programming' },
+  { id: '12', title: 'Java Programming' },
+  { id: '13', title: 'Database Management' },
+  { id: '14', title: 'Django Framework' },
+  { id: '15', title: 'My SQL' },
+];
+
+
+
+
 
 export default function App() {
   return (
@@ -108,68 +130,7 @@ export default function App() {
         <Text style={styles.sectionTitle}>Ongoing Task</Text>
 
         
-        <View style={styles.ogtask}>        
-      <Button title="Mobile App Development" color="black"/>
-      </View>
      
-
-      <View style={styles.ogtask}>
-      <Button title="Web Development" color="black"/>
-      </View>
-
-
-      <View style={styles.ogtask}>
-      <Button title="Push Ups" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Programming" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Language Learning" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Mental Health" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Assignments" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Announcements" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Calculus" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Software Engineering" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Python Programming" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Java Programming" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Database Management" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="Django Framework" color="black"/>
-      </View>
-
-      <View style={styles.ogtask}>
-      <Button title="My SQL" color="black"/>
-      </View>
-
 
 
         
@@ -211,13 +172,18 @@ export default function App() {
 
 
 
-
-
-
-
+        <FlatList
+        data={ongoingTasks}
+        renderItem={({ item }) => (
+          <View style={styles.ogtask}>
+            <Button title={item.title} color="black" />
+          </View>
+        )}
+        keyExtractor={item => item.id}
+      />
     </ScrollView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
