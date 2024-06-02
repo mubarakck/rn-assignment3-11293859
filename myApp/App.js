@@ -105,7 +105,74 @@ export default function App() {
         <Text >Mobile App Development</Text>
         </View>
 
+
+        <View style={styles.ogtask}>
+        <Text >Web Development</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Push Ups</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Programming</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Mental Health</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Assignments</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Announcements</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Calculus</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Software Engineering</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Python Programming</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Java Programming</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Database Management</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >Django Framework</Text>
+        </View>
+
+
+        <View style={styles.ogtask}>
+        <Text >My SQL</Text>
+        </View>
+
+
         
+
 
 
 
