@@ -19,7 +19,10 @@ export default function App() {
 
     <Text style={styles.taskCount}>14 tasks today</Text>
 
-
+    <View style={styles.searchContainer}>
+        <TextInput style={styles.searchInput} placeholder="Search" />
+        <Image source={ require("./assets/more.png")}  style={styles.filterIcon} />
+      </View>
 
 
 
@@ -91,6 +94,23 @@ const styles = StyleSheet.create({
   taskCount: {
     fontSize: 16,
     color: '#888',
+  },
+  searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 20,
+  },
+  searchInput: {
+    flex: 1,
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 10,
+    marginRight: 10,
+  },
+  filterIcon: {
+    backgroundColor: '#FF6F00',
+    padding: 10,
+    borderRadius: 10,
   },
   
 });
