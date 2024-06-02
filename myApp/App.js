@@ -15,7 +15,7 @@ export default function App() {
       <Image source={ require("./assets/person.png")}/>
     </View>
 
-
+    
     <Text style={styles.taskCount}>56 tasks today</Text>
 
     <View style={styles.searchContainer}>
@@ -108,74 +108,68 @@ export default function App() {
         <Text style={styles.sectionTitle}>Ongoing Task</Text>
 
         
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Mobile App Development</Text>
-        </View>
+        <View style={styles.ogtask}>        
+      <Button title="Mobile App Development" color="black"/>
+      </View>
+     
+
+      <View style={styles.ogtask}>
+      <Button title="Web Development" color="black"/>
+      </View>
 
 
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Web Development</Text>
-        </View>
+      <View style={styles.ogtask}>
+      <Button title="Push Ups" color="black"/>
+      </View>
 
+      <View style={styles.ogtask}>
+      <Button title="Programming" color="black"/>
+      </View>
 
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Push Ups</Text>
-        </View>
+      <View style={styles.ogtask}>
+      <Button title="Language Learning" color="black"/>
+      </View>
 
+      <View style={styles.ogtask}>
+      <Button title="Mental Health" color="black"/>
+      </View>
 
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Programming</Text>
-        </View>
+      <View style={styles.ogtask}>
+      <Button title="Assignments" color="black"/>
+      </View>
 
+      <View style={styles.ogtask}>
+      <Button title="Announcements" color="black"/>
+      </View>
 
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Mental Health</Text>
-        </View>
+      <View style={styles.ogtask}>
+      <Button title="Calculus" color="black"/>
+      </View>
 
+      <View style={styles.ogtask}>
+      <Button title="Software Engineering" color="black"/>
+      </View>
 
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Assignments</Text>
-        </View>
+      <View style={styles.ogtask}>
+      <Button title="Python Programming" color="black"/>
+      </View>
 
+      <View style={styles.ogtask}>
+      <Button title="Java Programming" color="black"/>
+      </View>
 
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Announcements</Text>
-        </View>
+      <View style={styles.ogtask}>
+      <Button title="Database Management" color="black"/>
+      </View>
 
+      <View style={styles.ogtask}>
+      <Button title="Django Framework" color="black"/>
+      </View>
 
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Calculus</Text>
-        </View>
+      <View style={styles.ogtask}>
+      <Button title="My SQL" color="black"/>
+      </View>
 
-
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Software Engineering</Text>
-        </View>
-
-
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Python Programming</Text>
-        </View>
-
-
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Java Programming</Text>
-        </View>
-
-
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Database Management</Text>
-        </View>
-
-
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>Django Framework</Text>
-        </View>
-
-
-        <View style={styles.ogtask}>
-        <Text style={styles.taskText}>My SQL</Text>
-        </View>
 
 
         
@@ -303,7 +297,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
   },
   ogtask: {
-    backgroundColor: '#FBF9F7',
+    backgroundColor: '#fff',
     borderRadius: 10,
     padding: 20,
     marginVertical: 8,
@@ -316,6 +310,7 @@ const styles = StyleSheet.create({
   taskText: {    
     top: 20,
     fontSize: 19,
-      }
+  },
+   
   
 });
