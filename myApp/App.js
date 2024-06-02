@@ -24,6 +24,8 @@ export default function App() {
         <Image source={ require("./assets/more.png")}  style={styles.filterIcon} />
       </View>
 
+      <Text style={styles.sectionTitle}>Categories</Text>
+
 
 
 
@@ -111,6 +113,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#FF6F00',
     padding: 10,
     borderRadius: 10,
+  },
+  categories: {
+    flexDirection: 'row',
+  },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginVertical: 10,
   },
   
 });
