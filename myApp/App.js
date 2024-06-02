@@ -1,4 +1,4 @@
-import { StyleSheet,ScrollView, TextInput, Image,  Text, View } from 'react-native';
+import { StyleSheet,ScrollView, Button, TextInput, Image,  Text, View } from 'react-native';
 
 export default function App() {
   return (
@@ -36,63 +36,63 @@ export default function App() {
        <ScrollView horizontal={true} style={styles.categories} showsHorizontalScrollIndicator={false}>
 
       <View style={styles.category}>         
-          <Text style={styles.categoryText}>Exercise</Text>
-          <Text style={styles.categoryTaskCount}>12 Tasks</Text>
+          <Button title="Exercise" color="black" style={styles.categoryText} />
+          <Text style={styles.categoryTaskCount}>3 Tasks</Text>
           <Image source={ require("./assets/img1.png")} style={styles.categoryImage} />
         </View>
 
         <View style={styles.category}>        
           <Text style={styles.categoryText}>Study</Text>
-        <Text style={styles.categoryTaskCount}>12 Tasks</Text>
+        <Text style={styles.categoryTaskCount}>11 Tasks</Text>
         <Image source={ require("./assets/img2.png")} style={styles.categoryImage} />
         </View>
 
         <View style={styles.category}>         
           <Text style={styles.categoryText}>Wash</Text>
-          <Text style={styles.categoryTaskCount}>12 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>0 Tasks</Text>
           <Image source={ require("./assets/wash.png")} style={styles.categoryImage} />
         </View>
 
         <View style={styles.category}>         
           <Text style={styles.categoryText}>Exercise</Text>
-          <Text style={styles.categoryTaskCount}>12 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>5 Tasks</Text>
           <Image source={ require("./assets/exercise.png")} style={styles.categoryImage} />
         </View>
 
         <View style={styles.category}>         
           <Text style={styles.categoryText}>Study</Text>
-          <Text style={styles.categoryTaskCount}>12 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>18 Tasks</Text>
           <Image source={ require("./assets/study.png")} style={styles.categoryImage} />
         </View>
 
         <View style={styles.category}>         
           <Text style={styles.categoryText}>Code</Text>
-          <Text style={styles.categoryTaskCount}>12 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>99 Tasks</Text>
           <Image source={ require("./assets/code.png")} style={styles.categoryImage} />
         </View>
 
         <View style={styles.category}>         
           <Text style={styles.categoryText}>Cook</Text>
-          <Text style={styles.categoryTaskCount}>12 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>4 Tasks</Text>
           <Image source={ require("./assets/cook.png")} style={styles.categoryImage} />
         </View>
 
         <View style={styles.category}>         
           <Text style={styles.categoryText}>Dance</Text>
-          <Text style={styles.categoryTaskCount}>12 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>13 Tasks</Text>
           <Image source={ require("./assets/dance.png")} style={styles.categoryImage} />
         </View>
 
         <View style={styles.category}>         
           <Text style={styles.categoryText}>Eat</Text>
-          <Text style={styles.categoryTaskCount}>12 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>2 Tasks</Text>
           <Image source={ require("./assets/eat.png")} style={styles.categoryImage} />
         </View>
 
         
 	        <View style={styles.category}>         
           <Text style={styles.categoryText}>Bath</Text>
-          <Text style={styles.categoryTaskCount}>12 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>1 Task</Text>
           <Image source={ require("./assets/bath.png")} style={styles.categoryImage} />
         </View>
 
@@ -107,74 +107,74 @@ export default function App() {
 
         <Text style={styles.sectionTitle}>Ongoing Task</Text>
 
-
+        
         <View style={styles.ogtask}>
-        <Text >Mobile App Development</Text>
+        <Text style={styles.taskText}>Mobile App Development</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Web Development</Text>
+        <Text style={styles.taskText}>Web Development</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Push Ups</Text>
+        <Text style={styles.taskText}>Push Ups</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Programming</Text>
+        <Text style={styles.taskText}>Programming</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Mental Health</Text>
+        <Text style={styles.taskText}>Mental Health</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Assignments</Text>
+        <Text style={styles.taskText}>Assignments</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Announcements</Text>
+        <Text style={styles.taskText}>Announcements</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Calculus</Text>
+        <Text style={styles.taskText}>Calculus</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Software Engineering</Text>
+        <Text style={styles.taskText}>Software Engineering</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Python Programming</Text>
+        <Text style={styles.taskText}>Python Programming</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Java Programming</Text>
+        <Text style={styles.taskText}>Java Programming</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Database Management</Text>
+        <Text style={styles.taskText}>Database Management</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >Django Framework</Text>
+        <Text style={styles.taskText}>Django Framework</Text>
         </View>
 
 
         <View style={styles.ogtask}>
-        <Text >My SQL</Text>
+        <Text style={styles.taskText}>My SQL</Text>
         </View>
 
 
@@ -262,25 +262,22 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
   },
-  sectionTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    marginVertical: 10,
-  },
+ 
   categories: {
     flexDirection: 'row',
     height:192,
-    
-    
+    width: 396,    
   },
   category: {
     backgroundColor: '#fff',
     borderRadius: 10,
     padding: 10,
     alignItems: 'center',
-    width:396,
+    width:222,
     marginRight: 30,
-    marginLeft: 20,
+    marginLeft: 5,
+    marginBottom:20,
+    height:192,
   },
   categoryImage: {
     width: 100,
@@ -292,11 +289,26 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 10,
   },
+  sectionTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginVertical: 10,
+  },
   ogtask: {
-    backgroundColor: '#fff',
+    backgroundColor: '#FBF9F7',
     borderRadius: 10,
     padding: 20,
     marginVertical: 8,
+    height: 128,
+    width: 354,
+    borderRadius: 15,
+    marginRight: 10,
+    marginLeft: 10,
   },
+  taskText: {
+    fontWeight: 'bold',
+    top: 20,
+    fontSize:19,
+  }
   
 });
