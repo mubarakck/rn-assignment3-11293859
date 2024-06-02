@@ -16,7 +16,7 @@ export default function App() {
     </View>
 
 
-    <Text style={styles.taskCount}>14 tasks today</Text>
+    <Text style={styles.taskCount}>56 tasks today</Text>
 
     <View style={styles.searchContainer}>
         <TextInput style={styles.searchInput} placeholder="Search" />
@@ -36,14 +36,14 @@ export default function App() {
        <ScrollView horizontal={true} style={styles.categories} showsHorizontalScrollIndicator={false}>
 
       <View style={styles.category}>         
-          <Button title="Exercise" color="black" style={styles.categoryText} />
+      <Text style={styles.categoryText}>Exercise</Text>
           <Text style={styles.categoryTaskCount}>3 Tasks</Text>
           <Image source={ require("./assets/img1.png")} style={styles.categoryImage} />
         </View>
 
         <View style={styles.category}>        
           <Text style={styles.categoryText}>Study</Text>
-        <Text style={styles.categoryTaskCount}>11 Tasks</Text>
+        <Text style={styles.categoryTaskCount}>1 Task</Text>
         <Image source={ require("./assets/img2.png")} style={styles.categoryImage} />
         </View>
 
@@ -61,13 +61,13 @@ export default function App() {
 
         <View style={styles.category}>         
           <Text style={styles.categoryText}>Study</Text>
-          <Text style={styles.categoryTaskCount}>18 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>8 Tasks</Text>
           <Image source={ require("./assets/study.png")} style={styles.categoryImage} />
         </View>
 
         <View style={styles.category}>         
           <Text style={styles.categoryText}>Code</Text>
-          <Text style={styles.categoryTaskCount}>99 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>9 Tasks</Text>
           <Image source={ require("./assets/code.png")} style={styles.categoryImage} />
         </View>
 
@@ -79,7 +79,7 @@ export default function App() {
 
         <View style={styles.category}>         
           <Text style={styles.categoryText}>Dance</Text>
-          <Text style={styles.categoryTaskCount}>13 Tasks</Text>
+          <Text style={styles.categoryTaskCount}>3 Tasks</Text>
           <Image source={ require("./assets/dance.png")} style={styles.categoryImage} />
         </View>
 
@@ -244,6 +244,7 @@ const styles = StyleSheet.create({
   taskCount: {
     fontSize: 16,
     color: '#888',
+    marginRight: 145,
   },
   searchContainer: {
     flexDirection: 'row',
@@ -256,6 +257,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 10,
     marginRight: 10,
+    height:49,
+    width: 353,
   },
   filterIcon: {
     backgroundColor: '#FF6F00',
@@ -275,7 +278,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width:222,
     marginRight: 30,
-    marginLeft: 5,
+    
     marginBottom:20,
     height:192,
   },
@@ -287,7 +290,12 @@ const styles = StyleSheet.create({
   categoryText: {
     fontSize: 16,
     fontWeight: 'bold',
-    marginTop: 10,
+    marginTop: 0,
+    marginRight: 120,
+  },
+  categoryTaskCount:{
+    marginRight: 140,
+    color: '#888',
   },
   sectionTitle: {
     fontSize: 18,
@@ -305,10 +313,9 @@ const styles = StyleSheet.create({
     marginRight: 10,
     marginLeft: 10,
   },
-  taskText: {
-    fontWeight: 'bold',
+  taskText: {    
     top: 20,
-    fontSize:19,
-  }
+    fontSize: 19,
+      }
   
 });
